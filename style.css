@@ -28,6 +28,12 @@
   color: #727272;
   text-align: justify;
 }
+.color-dark-1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: rgba(19, 19, 19, 1);
+  margin: 0 0;
+}
 .primary-btn {
   background-color: #ff900e;
   padding: 20px 25px;
@@ -59,11 +65,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.brand-name {
-  font-size: 3em;
-  font-weight: bold;
-  color: rgba(19, 19, 19, 1);
-}
+
 /* hero section */
 .hero-contain {
   max-width: 864px;
@@ -133,10 +135,10 @@ header {
   align-items: center;
   max-width: 1050px;
   padding: 50px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .Experience-description {
-  max-width: 450px;
+  max-width: 480px;
   margin-right: 20px;
 }
 .experi-head {
@@ -157,6 +159,32 @@ header {
 .experi-img {
   width: 100%;
 }
+/* facts start here */
+.Facts-container {
+  max-width: 1050px;
+  margin: 50px auto;
+}
+.facts-contain {
+  max-width: 500px;
+  margin-bottom: 70px;
+}
+.Awards-Winnings-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 8px wheat;
+  border: wheat 2px solid;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+}
+.facts-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link {
@@ -172,6 +200,27 @@ header {
   .Features-descrition {
     text-align: center;
   }
+  .Experience-container {
+    flex-direction: column-reverse;
+  }
+  .Experience-description {
+    max-width: 100%;
+    margin: 10px;
+  }
+  .Experience-header {
+    text-align: center;
+  }
+  .facts-contain {
+    text-align: center;
+  }
+  .facts-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Awards-Winnings-card {
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+  }
 }
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -182,5 +231,18 @@ header {
     max-width: 550px;
     margin: 10px;
     text-align: center;
+  }
+
+  .facts-contain {
+    max-width: 100%;
+    text-align: center;
+  }
+  .facts-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Awards-Winnings-card {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
   }
 }
