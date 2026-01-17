@@ -177,13 +177,46 @@ header {
   box-shadow: 5px 5px 8px wheat;
   border: wheat 2px solid;
   border-radius: 8px;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
 }
 .facts-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+/* Sponspors start here */
+.Sponspors-container {
+  max-width: 1050px;
+  margin: 50px auto;
+  padding-top: 50px;
+}
+.Sponspors-header {
+  margin: 30px auto;
+  max-width: 550px;
+  text-align: center;
+}
+.Sponspors-header p {
+  text-align: center;
+}
+.Sponspors-company {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.copyright {
+  margin: 50px auto;
+  max-width: 1050px;
+  padding: 30px;
+  background-color: #fff4e7;
+  border-radius: 8px;
+}
+.copyright p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 576px) {
   .navbar,
@@ -221,6 +254,20 @@ header {
     width: 350px;
     height: 200px;
   }
+  .Sponspors-company {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  .footer-copyright {
+    padding: 30px;
+  }
+  .copyright {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+  }
 }
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -244,5 +291,14 @@ header {
     margin: 0 auto;
     width: 300px;
     height: 200px;
+  }
+  .Sponspors-company {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-copyright {
+    padding: 30px;
   }
 }
